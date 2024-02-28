@@ -1,0 +1,13 @@
+name: univiestand_env_internal
+channels:
+  - knime
+  - conda-forge
+dependencies:
+  - knime-extension
+  - knime-python-base
+  - pandas
+  - molvs==0.1.1
+  - rdkit==2022.09.4
+
+
+

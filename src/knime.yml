@@ -1,0 +1,20 @@
+name: univiestand # Will be concatenated with the group_id to an ID
+author: Pharmacoinformatics Research Group, University of Vienna
+env_yml_path: environment.yml
+extension_module: univiestand_extension # The .py Python module containing the nodes of your extension
+description: Standardizer (UniVie) # Human readable bundle name / description
+long_description: "The Univie Standardizer is a KNIME node designed to standardize molecular structures in a dataset. It leverages the molvs Python package along with custom code developed by the Pharmacoinformatics Research Group at the University of Vienna. This node offers a wide range of options to process, sanitize, and standardize molecules to facilitate further analysis and modeling tasks. Key features include:
+    * Sanitization of molecules using RDKit
+    * Handling of stereochemistry (keep, remove, or clean)
+    * Removal of fragments and uncharging molecules
+    * Disconnecting metal atoms
+    * Normalization and reionization of molecules
+    * Keeping only the largest fragment of a molecule
+    * Canonicalization of tautomers
+    This node takes an input table containing molecular structures and outputs a table with standardized molecules, along with additional columns containing information on inorganic content if required. By providing a comprehensive set of options for molecular standardization, the Univie Standardizer node is a valuable tool for researchers working with molecular datasets in KNIME."
+group_id: at.ac.univie.pharminfo 
+version: 0.1.1 # Version of this Python node extension
+vendor: University of Vienna, Pharmacoinformatics Research Group.
+license_file: LICENSE.TXT # Best practice: put your LICENSE.TXT next to the knime.yml; otherwise you would need to change to path/to/LICENSE.txt
+feature_dependencies:
+  - org.knime.features.chem.types 4.7.0
